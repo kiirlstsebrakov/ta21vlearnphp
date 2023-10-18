@@ -5,6 +5,4 @@ use App\Router;
 
 Router::addRoutes('/', [PublicController::class, 'index']);
 
-Router::addRoutes('/about', function () {
-    include 'views/about.php';
-});
+Router::addRoutes('/about', [PublicController::class, 'about']);
